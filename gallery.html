@@ -143,9 +143,8 @@
       document.body.style.overflow = 'auto'; 
     }
     
-    // Fixed Filter Function with Correct Background Toggle
     function filterGallery(category, clickedButton) {
-      // 1. Filter all gallery items
+      
       const items = document.querySelectorAll('.gallery-item');
       items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
@@ -155,7 +154,6 @@
         }
       });
 
-      // 2. Clear background style from all filter buttons
       const buttons = document.querySelectorAll('.btn');
       buttons.forEach(btn => {
         btn.classList.remove('active-filter');
@@ -163,7 +161,6 @@
         btn.style.color = '#c5a880';
       });
 
-      // 3. Highlight the clicked button with Coffee Color
       clickedButton.classList.add('active-filter');
       clickedButton.style.backgroundColor = '#c5a880';
       clickedButton.style.color = '#0b1528';
