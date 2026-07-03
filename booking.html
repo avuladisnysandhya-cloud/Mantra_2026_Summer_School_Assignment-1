@@ -27,37 +27,37 @@
   </header>
 
   <main>
-    <section style="background: linear-gradient(135deg, #0b1528, #1e293b); color: white; padding: 60px 0; text-align: center;">
+    <section class="booking-hero">
       <div class="container">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 38px;">Reservation Desk</h1>
-        <p style="color: #c5a880;">Secure Your Absolute Luxury Experience</p>
+        <h1 class="booking-hero-title">Reservation Desk</h1>
+        <p class="booking-hero-subtitle">Secure Your Absolute Luxury Experience</p>
       </div>
     </section>
 
-    <section style="background: linear-gradient(rgba(248, 250, 252, 0.85), rgba(241, 245, 249, 0.9)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200') no-repeat center center/cover; padding: 80px 0;">
-      <div class="container" style="max-width: 650px; margin: 0 auto; padding: 0 20px;">
-        <div style="background: white; padding: 45px; border-radius: 4px; box-shadow: 0 15px 35px rgba(11, 21, 40, 0.06); border-top: 4px solid #c5a880;">
-          <h2 style="font-family: 'Marcellus', serif; text-align: center; color: #0b1528; margin-bottom: 35px; font-size: 28px; letter-spacing: 1px;">Stay Registration Form</h2>
+    <section class="booking-form-section">
+      <div class="container booking-container">
+        <div class="booking-card">
+          <h2 class="form-card-title">Stay Registration Form</h2>
           
           <form id="bookingForm">
-            <div style="margin-bottom: 25px;">
-              <label style="display: block; font-weight: bold; margin-bottom: 10px; color: #0b1528; font-size: 13px; letter-spacing: 0.5px;">GUEST FULL NAME</label>
-              <input type="text" id="name" placeholder="Enter your full name" required style="width: 100%; padding: 12px 15px; border-radius: 4px; border: 1px solid #cbd5e1; font-size: 15px; background-color: #f8fafc; box-sizing: border-box;">
+            <div class="form-group">
+              <label class="form-label">GUEST FULL NAME</label>
+              <input type="text" id="name" placeholder="Enter your full name" required class="form-input">
             </div>
 
-            <div style="margin-bottom: 25px;">
-              <label style="display: block; font-weight: bold; margin-bottom: 10px; color: #0b1528; font-size: 13px; letter-spacing: 0.5px;">EMAIL ADDRESS</label>
-              <input type="email" id="email" placeholder="name@example.com" required style="width: 100%; padding: 12px 15px; border-radius: 4px; border: 1px solid #cbd5e1; font-size: 15px; background-color: #f8fafc; box-sizing: border-box;">
+            <div class="form-group">
+              <label class="form-label">EMAIL ADDRESS</label>
+              <input type="email" id="email" placeholder="name@example.com" required class="form-input">
             </div>
 
-            <div style="margin-bottom: 25px;">
-              <label style="display: block; font-weight: bold; margin-bottom: 10px; color: #0b1528; font-size: 13px; letter-spacing: 0.5px;">CONTACT MOBILE NUMBER</label>
-              <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" required style="width: 100%; padding: 12px 15px; border-radius: 4px; border: 1px solid #cbd5e1; font-size: 15px; background-color: #f8fafc; box-sizing: border-box;">
+            <div class="form-group">
+              <label class="form-label">CONTACT MOBILE NUMBER</label>
+              <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" required class="form-input">
             </div>
 
-            <div style="margin-bottom: 35px;">
-              <label style="display: block; font-weight: bold; margin-bottom: 10px; color: #0b1528; font-size: 13px; letter-spacing: 0.5px;">PREFERRED ACCOMMODATION SELECTION</label>
-              <select id="destination" required style="width: 100%; padding: 12px 15px; border-radius: 4px; border: 1px solid #cbd5e1; font-size: 15px; background: #f8fafc; box-sizing: border-box;">
+            <div class="form-group-large">
+              <label class="form-label">PREFERRED ACCOMMODATION SELECTION</label>
+              <select id="destination" required class="form-select">
                 <option value="">-- Click to choose suite category --</option>
                 <option value="deluxe">Deluxe Ocean View Suite</option>
                 <option value="wellness">Executive Wellness Suite</option>
@@ -65,14 +65,15 @@
               </select>
             </div>
 
-            <button type="submit" style="width: 100%; padding: 14px; font-size: 15px; background-color: #c5a880; color: #0b1528; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(197, 168, 128, 0.25);">Transmit Booking Verification</button>
+            <button type="submit" class="booking-submit-btn">Transmit Booking Verification</button>
             
-            <p id="formMessage" style="margin-top: 20px; text-align: center; font-weight: bold;"></p>
+            <p id="formMessage" class="form-status-msg"></p>
           </form>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
@@ -99,7 +100,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -111,6 +111,5 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
-</body>
+  </body>
 </html>
