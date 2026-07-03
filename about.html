@@ -29,35 +29,37 @@
   </header>
 
   <main>
-    <section style="background: linear-gradient(135deg, #0b1528, #1e293b); color: white; padding: 60px 0; text-align: center;">
+    <!-- ఇన్‌లైన్ స్టైల్స్ పూర్తిగా తీసేసి క్లాసెస్ పెట్టాను -->
+    <section class="about-hero">
       <div class="container">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 38px; margin: 0 0 10px 0;">Our Heritage</h1>
-        <p style="color: #c5a880; margin: 0; font-size: 16px; letter-spacing: 1px;">The Story of Luxury & Timeless Hospitality</p>
+        <h1 class="about-hero-title">Our Heritage</h1>
+        <p class="about-hero-subtitle">The Story of Luxury & Timeless Hospitality</p>
       </div>
     </section>
 
-    <!-- 2. Responsive Grid Structure Configuration -->
-    <section class="container" style="padding: 60px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto;">
-      <div style="padding: 0;">
-        <h2 style="font-family: 'Marcellus', serif; font-size: 34px; color: #0b1528; margin-bottom: 25px; letter-spacing: 1px; line-height: 1.3;">
+    <!-- ఇన్‌లైన్ స్టైల్స్ తీసేసి క్లీన్ గ్రిడ్ స్ట్రక్చర్ -->
+    <section class="container about-grid-section">
+      <div class="about-text-content">
+        <h2 class="about-main-heading">
           Crafting Perfect Stays Since 2026
         </h2>
         
-        <p style="font-size: 15px; color: #4a5568; line-height: 1.9; margin-bottom: 25px; text-align: justify; letter-spacing: 0.3px;">
+        <p class="about-paragraph">
           MANTRA Luxury Resort & Spa matches elite comfort with absolute tranquility. Founded as a sanctuary for modern connoisseurs, we offer customized executive stays tailored specifically for world travelers, digital elites, and corporate visionaries. From our architectural grandeur and infinity ocean views to our 24/7 personal butler service, every detail is meticulously designed to offer a seamless fusion of luxury and privacy.
         </p>
         
-        <p style="font-size: 14px; color: #718096; line-height: 1.6; font-style: italic; border-left: 3px solid #c5a880; padding-left: 15px; margin: 0;">
+        <p class="about-notice">
           This official portal is uniquely built for the MANTRA 2026 Summer School web framework assignment.
         </p>
       </div>
       
-      <!-- 3.Responsive Image Layout Container -->
-      <div style="border-radius: 4px; overflow: hidden; box-shadow: 0 15px 35px rgba(11, 21, 40, 0.08); border: 1px solid rgba(197, 168, 128, 0.2); width: 100%; height: 350px;">
-        <img src="images/Rec.jpg" alt="MANTRA Luxury Resort Premium Reception Lobby Grand Interior" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <!-- రెస్పాన్సివ్ ఇమేజ్ కంటైనర్ క్లాస్ -->
+      <div class="about-image-container">
+        <img src="images/Rec.jpg" alt="MANTRA Luxury Resort Premium Reception Lobby Grand Interior" class="about-img">
       </div>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
@@ -83,7 +85,6 @@
     </div>
   </footer>
 
-  <!-- 4.Navigation Control Scirpt Link -->
   <script src="script.js"></script>
 
   <!--Start of Tawk.to Script-->
