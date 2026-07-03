@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Your Stay | MANTRA Luxury Resort & Spa</title>
-  <meta name="description" content="Secure your luxury accommodation booking layout online using our secure validation portal.">
-  <meta name="keywords" content="resort reservation form, luxury stay booking, hotel application check">
+  <title>Stay Booking & Reservation Desk | MANTRA Resort</title>
+  <meta name="description" content="Book your premium suites online at MANTRA Luxury Resort. Seamless stay reservation registration.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,49 +26,36 @@
   </header>
 
   <main>
-    <section class="booking-hero">
+    <section class="rooms-hero">
       <div class="container">
-        <h1 class="booking-hero-title">Reservation Desk</h1>
-        <p class="booking-hero-subtitle">Secure Your Absolute Luxury Experience</p>
+        <h1 class="rooms-hero-title">Reservation Desk</h1>
+        <p class="rooms-hero-subtitle">Secure Your Absolute Luxury Experience</p>
       </div>
     </section>
 
-    <section class="booking-form-section">
-      <div class="container booking-container">
-        <div class="booking-card">
-          <h2 class="form-card-title">Stay Registration Form</h2>
-          
-          <form id="bookingForm">
-            <div class="form-group">
-              <label class="form-label">GUEST FULL NAME</label>
-              <input type="text" id="name" placeholder="Enter your full name" required class="form-input">
-            </div>
+    <section class="container" style="padding: 60px 0;">
+      <div class="calculator-box">
+        <h2 class="calc-heading">Stay Registration Form</h2>
+        <form action="#" method="POST" onsubmit="alert('Booking Request Transmitted Successfully!'); return false;">
+          <label class="calc-label">GUEST FULL NAME</label>
+          <input type="text" placeholder="Enter your full name" class="calc-input" required>
 
-            <div class="form-group">
-              <label class="form-label">EMAIL ADDRESS</label>
-              <input type="email" id="email" placeholder="name@example.com" required class="form-input">
-            </div>
+          <label class="calc-label">EMAIL ADDRESS</label>
+          <input type="email" placeholder="name@example.com" class="calc-input" required>
 
-            <div class="form-group">
-              <label class="form-label">CONTACT MOBILE NUMBER</label>
-              <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" required class="form-input">
-            </div>
+          <label class="calc-label">CONTACT MOBILE NUMBER</label>
+          <input type="tel" placeholder="Enter 10 digit mobile number" class="calc-input" required>
 
-            <div class="form-group-large">
-              <label class="form-label">PREFERRED ACCOMMODATION SELECTION</label>
-              <select id="destination" required class="form-select">
-                <option value="">-- Click to choose suite category --</option>
-                <option value="deluxe">Deluxe Ocean View Suite</option>
-                <option value="wellness">Executive Wellness Suite</option>
-                <option value="presidential">Presidential Private Villa</option>
-              </select>
-            </div>
+          <label class="calc-label">PREFERRED ACCOMMODATION SELECTION</label>
+          <select class="calc-select" required>
+            <option value="">-- Click to choose suite category --</option>
+            <option value="deluxe">Deluxe Ocean View</option>
+            <option value="executive">Executive Wellness Suite</option>
+            <option value="presidential">Presidential Villa</option>
+          </select>
 
-            <button type="submit" class="booking-submit-btn">Transmit Booking Verification</button>
-            
-            <p id="formMessage" class="form-status-msg"></p>
-          </form>
-        </div>
+          <button type="submit" class="btn calc-btn">Transmit Booking Verification</button>
+        </form>
       </div>
     </section>
   </main>
@@ -77,39 +63,9 @@
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
-      
-      <div class="footer-seo-text">
-        <p>MANTRA Luxury Resort & Spa offers an unparalleled premium hotel stay experience. Our elite luxury accommodation options include customized executive suites configurations, spacious oceanfront villas, and elegant presidential rooms specifically designed for corporate and leisure travelers seeking absolute comfort. Experience world-class hospitality, beachside fine dining, refreshing infinity swimming pools, organic wellness treatments, holistic spa therapy modules, and complete body rejuvenation inside our peaceful resort sanctuary.</p>
-        <p>Whether you are planning an executive business retreat, a luxury family holiday booking, or a peaceful weekend getaway stay, MANTRA provides bespoke hospitality and premium amenities. Discover absolute tranquility, breathtaking coastal view landscapes, customized 24/7 room services, and immersive sensory delights tailored to perfection by our hospitality management experts.</p>
-      </div>
-      
-      <div class="footer-contact-info">
-        <p><strong>Business Address:</strong> Near Beach Road, Visakhapatnam, Andhra Pradesh, Pin Code: 530001, India</p>
-        <p><strong>Official Phone Number:</strong> +91 98765 43210</p>
-        <p><strong>Official Email:</strong> contact [at] mantra-mist.netlify.app</p>
-      </div>
-
-      <div class="social-links">
-        <a href="https://facebook.com/mantraluxuryresort" target="_blank">Facebook</a> | 
-        <a href="https://x.com/mantraresort" target="_blank">X (Twitter)</a> | 
-        <a href="https://instagram.com/mantraresort" target="_blank">Instagram</a> | 
-        <a href="https://youtube.com/mantraresort" target="_blank">YouTube Channel</a> | 
-        <a href="https://linkedin.com/company/mantraresort" target="_blank">LinkedIn</a>
-      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a45ff498c45b31d46f20f6c/1jsgmqic3';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-  </body>
+</body>
 </html>
