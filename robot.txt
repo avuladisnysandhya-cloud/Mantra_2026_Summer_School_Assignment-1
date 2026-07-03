@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mantra-mirage.netlify.app/sitemap.xml
