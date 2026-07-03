@@ -7,7 +7,7 @@ This repository contains my submission for **Assignment 1: Frontend Website Desi
 The project focuses on creating a premium, fully responsive luxury resort website integrated with modern frontend practices, search engine optimization (SEO) basics, and a live AI conversational assistant.
 
 ## 🔗 Live Deployment
-View the live project here: **WAIT**
+View the live project here: **https://mantra-mist.netlify.app/**
 
 ---
 
