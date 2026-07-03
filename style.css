@@ -123,3 +123,35 @@ body {
   }
   .nav-links.show { display: flex; }
 }
+/* Footer SEO Optimizations */
+.main-footer {
+  background-color: #0b1528;
+  color: #94a3b8;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 1px solid rgba(197, 168, 128, 0.2);
+}
+.footer-seo-text {
+  max-width: 850px;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+.footer-contact-info {
+  font-size: 14px;
+  color: #c5a880;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.social-links {
+  margin-top: 20px;
+}
+.social-links a {
+  color: #c5a880;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
