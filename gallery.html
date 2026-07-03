@@ -5,41 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Gallery | MANTRA Luxury Resort & Spa</title>
   <link rel="icon" type="image/png" href="images/SPool.jpg">
-  <!-- 1. Canonical Tag -->
-  <link rel="canonical" href="https://mantra-mirage.netlify.app/gallery.html" />
+  
+  <!-- 1. Canonical Tag (Corrected Domain) -->
+  <link rel="canonical" href="https://mantra-mist.netlify.app/gallery.html" />
 
-  <!-- 2. Schema.org Structured Data & Identity Schema -->
+  <!-- 2. Schema.org Structured Data & Identity Schema (Corrected Domain) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Hotel",
     "name": "MANTRA Luxury Resort & Spa",
     "description": "Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort.",
-    "url": "https://mantra-mirage.netlify.app",
+    "url": "https://mantra-mist.netlify.app",
     "telephone": "+91 98765 43210",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Beach Road",
+      "streetAddress": "Near Beach Road",
       "addressLocality": "Visakhapatnam",
-      "addressRegion": "AP",
-      "country": "IN"
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "530001",
+      "addressCountry": "IN"
     }
   }
   </script>
 
-  <!-- 3. Facebook Open Graph Tags -->
+  <!-- 3. Facebook Open Graph Tags (Corrected Domain) -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mantra-mirage.netlify.app/gallery.html" />
+  <meta property="og:url" content="https://mantra-mist.netlify.app/gallery.html" />
   <meta property="og:title" content="MANTRA Luxury Resort | Premium Hotel Stay & Booking" />
   <meta property="og:description" content="Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort." />
-  <meta property="og:image" content="https://mantra-mirage.netlify.app/images/hero-bg.jpg" />
+  <meta property="og:image" content="https://mantra-mist.netlify.app/images/hero-bg.jpg" />
 
-  <!-- 4. X (Twitter) Cards -->
+  <!-- 4. X (Twitter) Cards (Corrected Domain) -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://mantra-mirage.netlify.app/gallery.html" />
+  <meta property="twitter:url" content="https://mantra-mist.netlify.app/gallery.html" />
   <meta property="twitter:title" content="MANTRA Luxury Resort | Premium Hotel Stay & Booking" />
   <meta property="twitter:description" content="Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort." />
-  <meta property="twitter:image" content="https://mantra-mirage.netlify.app/images/hero-bg.jpg" />
+  <meta property="twitter:image" content="https://mantra-mist.netlify.app/images/hero-bg.jpg" />
+  
   <meta name="description" content="Explore beautiful visual sights, elite rooms, and beach views through our responsive hotel gallery.">
   <meta name="keywords" content="hotel gallery, resort photos, luxury suites visual exhibits">
   <link rel="stylesheet" href="style.css">
@@ -160,6 +163,7 @@
     <button class="close-btn" onclick="closePopup()">&times;</button>
     <img src="" id="popupImg" class="popup-content" alt="Enlarged View">
   </div>
+
   <footer style="background-color: #0b1528; color: #94a3b8; padding: 40px 0; text-align: center; border-top: 1px solid rgba(197, 168, 128, 0.2);">
     <p style="font-size: 14px;">© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
     
@@ -168,10 +172,10 @@
     </p>
   
     <p style="font-size: 13px; color: #94a3b8; margin-top: 15px; line-height: 1.8;">
-      <strong>Postal Business Address:</strong> Mantra Luxury Resort, Near Beach Road, Visakhapatnam, Andhra Pradesh, Pin Code: 530001, India <br>
-      <strong>Official Phone Number:</strong> +91 98765 43210 | <strong>Email:</strong> contact@mantra-mist.netlify.app
+      Address: Near Beach Road, Visakhapatnam, Andhra Pradesh, 530001, India | Phone: +91 98765 43210
     </p>
   </footer>
+
   <script src="script.js"></script>
 
   <script>
@@ -187,7 +191,6 @@
     }
     
     function filterGallery(category, clickedButton) {
-      
       const items = document.querySelectorAll('.gallery-item');
       items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
