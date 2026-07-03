@@ -56,12 +56,6 @@
       transform: scale(1.03);
     }
 
-    .btn.active-filter {
-      background-color: #c5a880 !important;
-      color: #0b1528 !important;
-      border: 1px solid #c5a880 !important;
-    }
-
     /* Popup Overlay */
     .popup-overlay {
       display: none; 
@@ -108,7 +102,6 @@
     fbq('init', '1234567890');fbq('track', 'PageView');
   </script>
 </head>
-</head>
 <body>
 
   <header class="site-header">
@@ -127,46 +120,48 @@
     </div>
   </header>
 
-  <main style="background-color: #0b1528; padding: 40px 0;">
-    <section style="text-align: center; padding-bottom: 40px;">
+  <main class="gallery-main">
+    <section class="gallery-hero">
       <div class="container">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 38px; color: #c5a880; margin-bottom: 10px;">Visual Exhibits</h1>
-        <p style="color: #94a3b8; font-size: 16px;">A Glimpse Into Absolute Grandeur</p>
+        <h1 class="gallery-title">Visual Exhibits</h1>
+        <p class="gallery-subtitle">A Glimpse Into Absolute Grandeur</p>
       </div>
     </section>
 
     <section class="container">
       
-      <div style="text-align: center; margin-bottom: 35px;">
-        <button class="btn active-filter" style="background-color: #c5a880; color: #0b1528; border: 1px solid #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer;" onclick="filterGallery('all', this)">Show All</button>
-        <button class="btn" style="background: none; border: 1px solid #c5a880; color: #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; border-radius: 4px; cursor: pointer; font-weight: bold;" onclick="filterGallery('villas', this)">Villas & Rooms</button>
-        <button class="btn" style="background: none; border: 1px solid #c5a880; color: #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; border-radius: 4px; cursor: pointer; font-weight: bold;" onclick="filterGallery('amenities', this)">Amenities & Pools</button>
+      <!-- ఫిల్టర్ బటన్స్ (ఇన్‌లైన్ స్టైల్స్ లేవు) -->
+      <div class="filter-btn-container">
+        <button class="gallery-filter-btn active-filter" onclick="filterGallery('all', this)">Show All</button>
+        <button class="gallery-filter-btn" onclick="filterGallery('villas', this)">Villas & Rooms</button>
+        <button class="gallery-filter-btn" onclick="filterGallery('amenities', this)">Amenities & Pools</button>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 20px 0;">
+      <!-- రెస్పాన్సివ్ గ్యాలరీ గ్రిడ్ -->
+      <div class="gallery-grid">
         
-        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/Bedroom.jpg" alt="MANTRA Luxury Resort Presidential Bed Setup" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item villas">
+          <img src="images/Bedroom.jpg" alt="MANTRA Luxury Resort Presidential Bed Setup" onclick="openPopup(this.src)">
         </div>
 
-        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/SPool.jpg" alt="MANTRA Luxury Resort Infinity Blue Waterway" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item amenities">
+          <img src="images/SPool.jpg" alt="MANTRA Luxury Resort Infinity Blue Waterway" onclick="openPopup(this.src)">
         </div>
 
-        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/Living_.jpg" alt="MANTRA Luxury Resort Royal Lounge Living Space" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item villas">
+          <img src="images/Living_.jpg" alt="MANTRA Luxury Resort Royal Lounge Living Space" onclick="openPopup(this.src)">
         </div>
 
-        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/Bath.jpg" alt="MANTRA Luxury Resort Therapy Sanctuary Room" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item amenities">
+          <img src="images/Bath.jpg" alt="MANTRA Luxury Resort Therapy Sanctuary Room" onclick="openPopup(this.src)">
         </div>
 
-        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/hero-bg.jpg" alt="MANTRA Luxury Suite View" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item villas">
+          <img src="images/hero-bg.jpg" alt="MANTRA Luxury Suite View" onclick="openPopup(this.src)">
         </div>
 
-        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-          <img src="images/colourpool.jpg" alt="MANTRA Luxury Resort Ground View" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div class="gallery-item amenities">
+          <img src="images/colourpool.jpg" alt="MANTRA Luxury Resort Ground View" onclick="openPopup(this.src)">
         </div>
 
       </div>
@@ -177,7 +172,7 @@
     <button class="close-btn" onclick="closePopup()">&times;</button>
     <img src="" id="popupImg" class="popup-content" alt="Enlarged View">
   </div>
-  <!-- Inline Styles లేని క్లీన్ ఫుటర్ సెక్షన్ -->
+
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
@@ -202,6 +197,7 @@
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 
   <script>
@@ -217,6 +213,7 @@
     }
     
     function filterGallery(category, clickedButton) {
+      // ఐటమ్స్ ఫిల్టరింగ్ లాజిక్
       const items = document.querySelectorAll('.gallery-item');
       items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
@@ -226,31 +223,13 @@
         }
       });
 
-      const buttons = document.querySelectorAll('.btn');
+      // బటన్ యాక్టివ్ క్లాస్ లాజిక్ (జావాస్క్రిప్ట్ లో ఇన్‌లైన్ స్టైల్స్ వాడకుండా కేవలం క్లాస్ మాత్రమే మారుస్తున్నాం)
+      const buttons = document.querySelectorAll('.gallery-filter-btn');
       buttons.forEach(btn => {
         btn.classList.remove('active-filter');
-        btn.style.backgroundColor = 'transparent';
-        btn.style.color = '#c5a880';
       });
-
       clickedButton.classList.add('active-filter');
-      clickedButton.style.backgroundColor = '#c5a880';
-      clickedButton.style.color = '#0b1528';
     }
   </script>
-
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a45ff498c45b31d46f20f6c/1jsgmqic3';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
 </body>
 </html>
