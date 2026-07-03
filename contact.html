@@ -27,63 +27,64 @@
   </header>
 
   <main>
-    <section style="background: linear-gradient(135deg, #0b1528, #1e293b); color: white; padding: 60px 0; text-align: center;">
+    <section class="contact-hero">
       <div class="container">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 38px;">World-Class Amenities</h1>
-        <p style="color: #c5a880;">Crafted Specially For Your Relaxation</p>
+        <h1 class="contact-hero-title">World-Class Amenities</h1>
+        <p class="contact-hero-subtitle">Crafted Specially For Your Relaxation</p>
       </div>
     </section>
 
-    <section class="container" style="padding: 60px 0;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 50px;">
+    <section class="container contact-main-section">
+      <div class="contact-grid">
         
-        <div style="background: linear-gradient(rgba(11, 21, 40, 0.9), rgba(11, 21, 40, 0.95)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000') no-repeat center/cover; color: white; padding: 45px; border-radius: 4px; border-left: 4px solid #c5a880; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 style="font-family: 'Marcellus', serif; color: #c5a880; margin-bottom: 35px; font-size: 26px; letter-spacing: 1px;">Resort Sanctuary</h3>
+        <div class="contact-info-card">
+          <div class="card-inner-content">
+            <h3 class="info-card-title">Resort Sanctuary</h3>
             
-            <div style="margin-bottom: 35px;">
-              <strong style="color: #c5a880; display: block; margin-bottom: 10px; font-size: 15px; letter-spacing: 0.5px;">📍 Location Address:</strong>
-              <p style="font-size: 15px; color: #e2e8f0; line-height: 1.8; letter-spacing: 0.3px;">MANTRA Luxury Resort & Spa,<br>Beachfront Boulevard, Golden Sands Riviera,<br>Goa, India - 403001</p>
+            <div class="info-group">
+              <strong class="info-label">📍 Location Address:</strong>
+              <p class="info-text">MANTRA Luxury Resort & Spa,<br>Near Beach Road, Visakhapatnam,<br>Andhra Pradesh, India - 530001</p>
             </div>
 
-            <div style="margin-bottom: 35px;">
-              <strong style="color: #c5a880; display: block; margin-bottom: 10px; font-size: 15px; letter-spacing: 0.5px;">📞 Reception Desk:</strong>
-              <p style="font-size: 15px; color: #e2e8f0; line-height: 1.8; letter-spacing: 0.5px;">+91 88888 99999 / +91 77777 66666</p>
+            <div class="info-group">
+              <strong class="info-label">📞 Reception Desk:</strong>
+              <p class="info-text">+91 98765 43210 / +91 77777 66666</p>
             </div>
 
-            <div style="margin-bottom: 15px;">
-              <strong style="color: #c5a880; display: block; margin-bottom: 10px; font-size: 15px; letter-spacing: 0.5px;">✉️ Digital Concierge:</strong>
-              <p style="font-size: 15px; color: #e2e8f0; line-height: 1.8; letter-spacing: 0.5px;">stay@mantraresort.com</p>
+            <div class="info-group">
+              <strong class="info-label">✉️ Digital Concierge:</strong>
+              <p class="info-text">contact [at] mantra-mist.netlify.app</p>
             </div>
           </div>
         </div>
 
-        <div style="background: white; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; padding: 40px;">
-          <h3 style="font-family: 'Marcellus', serif; color: #0b1528; margin-bottom: 20px; font-size: 24px;">Send An Inquiry</h3>
+        <div class="contact-form-card">
+          <h3 class="form-card-heading">Send An Inquiry</h3>
           
           <form onsubmit="alert('Thank you! Our luxury concierge service will contact you shortly.'); return false;">
-            <div style="margin-bottom: 15px;">
-              <label style="display: block; font-size: 13px; color: #718096; margin-bottom: 5px; font-weight: bold;">GUEST NAME</label>
-              <input type="text" placeholder="Enter your full name" required style="width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;">
+            <div class="contact-field">
+              <label class="field-label">GUEST NAME</label>
+              <input type="text" placeholder="Enter your full name" required class="field-input">
             </div>
 
-            <div style="margin-bottom: 15px;">
-              <label style="display: block; font-size: 13px; color: #718096; margin-bottom: 5px; font-weight: bold;">EMAIL ADDRESS</label>
-              <input type="email" placeholder="name@example.com" required style="width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;">
+            <div class="contact-field">
+              <label class="field-label">EMAIL ADDRESS</label>
+              <input type="email" placeholder="name@example.com" required class="field-input">
             </div>
 
-            <div style="margin-bottom: 20px;">
-              <label style="display: block; font-size: 13px; color: #718096; margin-bottom: 5px; font-weight: bold;">MESSAGE / REQUEST</label>
-              <textarea rows="4" placeholder="How can our concierge assist you?" required style="width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px; resize: none;"></textarea>
+            <div class="contact-field-large">
+              <label class="field-label">MESSAGE / REQUEST</label>
+              <textarea rows="4" placeholder="How can our concierge assist you?" required class="field-textarea"></textarea>
             </div>
 
-            <button type="submit" style="background-color: #0b1528; color: white; border: none; width: 100%; padding: 12px; font-weight: bold; border-radius: 4px; cursor: pointer; font-size: 14px; transition: background 0.3s;">Submit Request</button>
+            <button type="submit" class="form-submit-btn">Submit Request</button>
           </form>
         </div>
 
       </div>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
@@ -110,7 +111,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -122,6 +122,5 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
-</body>
+  </body>
 </html>
