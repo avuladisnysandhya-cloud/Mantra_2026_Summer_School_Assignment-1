@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Assignment SEO Criteria Checked-->
   <title>Rooms & Luxury Suites | MANTRA Luxury Resort</title>
   <meta name="description" content="Compare premium room prices and calculate your luxury stay cost at MANTRA Resort.">
   <meta name="keywords" content="hotel rooms, executive suites pricing, room cost calculator">
@@ -11,7 +10,6 @@
 </head>
 <body>
 
-  <!-- Header Code (Same for all pages) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">MANTRA <span>RESORT</span></a>
@@ -29,77 +27,70 @@
   </header>
 
   <main>
-    <!-- Page Title Banner-->
-    <section style="background: linear-gradient(135deg, #0b1528, #1e293b); color: white; padding: 60px 0; text-align: center;">
+    <section class="rooms-hero">
       <div class="container">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 38px;">Accommodations</h1>
-        <p style="color: #c5a880;">Experience Premium Executive Suites</p>
+        <h1 class="rooms-hero-title">Accommodations</h1>
+        <p class="rooms-hero-subtitle">Experience Premium Executive Suites</p>
       </div>
     </section>
-    <!-- Rooms Cards Grid Layout -->
-    <section class="container" style="padding: 50px 0;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+
+    <section class="container rooms-section">
+      <div class="rooms-grid">
         
-        <!-- Room 1 -->
-        <article style="background: white; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; overflow: hidden;">
-          <div style="height: 200px; width: 100%; overflow: hidden;">
-            <img src="images/ocen_view.jpg" alt="MANTRA Luxury Deluxe Ocean View Suite" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <article class="room-card">
+          <div class="room-img-container">
+            <img src="images/ocen_view.jpg" alt="MANTRA Luxury Deluxe Ocean View Suite">
           </div>
-          <div style="padding: 25px;">
-            <h3 style="color: #0b1528; font-family: 'Marcellus', serif; margin-bottom: 10px;">Deluxe Ocean View</h3>
-            <p style="font-size: 14px; color: #718096; margin-bottom: 15px;">King size bed, private balcony, beach facing.</p>
-            <p style="color: #d97706; font-weight: bold; font-size: 18px;">₹12,000 / Night</p>
-          </div>
-        </article>
-
-        <!-- Room 2 -->
-        <article style="background: white; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; overflow: hidden;">
-          <div style="height: 200px; width: 100%; overflow: hidden;">
-            <img src="images/Luxury_Bathroom.jpg" alt="MANTRA Executive Wellness Suite Jacuzzi Setup" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          </div>
-          <div style="padding: 25px;">
-            <h3 style="color: #0b1528; font-family: 'Marcellus', serif; margin-bottom: 10px;">Executive Wellness Suite</h3>
-            <p style="font-size: 14px; color: #718096; margin-bottom: 15px;">Private jacuzzi, complimentary spa access, lounge access.</p>
-            <p style="color: #d97706; font-weight: bold; font-size: 18px;">₹18,000 / Night</p>
+          <div class="room-details">
+            <h3 class="room-title">Deluxe Ocean View</h3>
+            <p class="room-desc">King size bed, private balcony, beach facing.</p>
+            <p class="room-price">₹12,000 / Night</p>
           </div>
         </article>
 
-        <!-- Room 3 -->
-        <article style="background: white; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; overflow: hidden;">
-          <div style="height: 200px; width: 100%; overflow: hidden;">
-            <img src="images/Pool.jpg" alt="MANTRA Presidential Villa Private Infinity Pool View" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <article class="room-card">
+          <div class="room-img-container">
+            <img src="images/Luxury_Bathroom.jpg" alt="MANTRA Executive Wellness Suite Jacuzzi Setup">
           </div>
-          <div style="padding: 25px;">
-            <h3 style="color: #0b1528; font-family: 'Marcellus', serif; margin-bottom: 10px;">Presidential Villa</h3>
-            <p style="font-size: 14px; color: #718096; margin-bottom: 15px;">Private infinite pool, 24/7 personal butler service, elite luxury.</p>
-            <p style="color: #d97706; font-weight: bold; font-size: 18px;">₹28,000 / Night</p>
+          <div class="room-details">
+            <h3 class="room-title">Executive Wellness Suite</h3>
+            <p class="room-desc">Private jacuzzi, complimentary spa access, lounge access.</p>
+            <p class="room-price">₹18,000 / Night</p>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <div class="room-img-container">
+            <img src="images/Pool.jpg" alt="MANTRA Presidential Villa Private Infinity Pool View">
+          </div>
+          <div class="room-details">
+            <h3 class="room-title">Presidential Villa</h3>
+            <p class="room-desc">Private infinite pool, 24/7 personal butler service, elite luxury.</p>
+            <p class="room-price">₹28,000 / Night</p>
           </div>
         </article>
 
       </div>
-    </section>
 
-      <!-- Mandatory JavaScript Calculator Box Feature-->
-      <div style="background: white; padding: 35px; border-radius: 4px; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-        <h2 style="font-family: 'Marcellus', serif; text-align: center; color: #0b1528; margin-bottom: 25px;">Estimated Stay Calculator</h2>
+      <div class="calculator-box">
+        <h2 class="calc-heading">Estimated Stay Calculator</h2>
         
-        <label style="display: block; font-weight: bold; margin-bottom: 8px;">Select Room Category</label>
-        <select id="packageSelect" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #cbd5e1; margin-bottom: 20px; font-size: 16px;">
+        <label class="calc-label">Select Room Category</label>
+        <select id="packageSelect" class="calc-select">
           <option value="12000">Deluxe Ocean View - ₹12,000</option>
           <option value="18000">Executive Wellness Suite - ₹18,000</option>
-          <option value="35000">Presidential Villa - ₹35,000</option>
+          <option value="28000">Presidential Villa - ₹28,000</option>
         </select>
 
-        <label style="display: block; font-weight: bold; margin-bottom: 8px;">Number of Nights</label>
-        <input type="number" id="peopleCount" min="1" value="1" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #cbd5e1; margin-bottom: 25px; font-size: 16px;">
+        <label class="calc-label">Number of Nights</label>
+        <input type="number" id="peopleCount" min="1" value="1" class="calc-input">
 
-        <button class="btn" onclick="calculateCost()" style="width: 100%;">Calculate Estimation</button>
-        <p id="costResult" style="margin-top: 20px; text-align: center; font-weight: bold; font-size: 18px;"></p>
+        <button class="btn calc-btn" onclick="calculateCost()">Calculate Estimation</button>
+        <p id="costResult" class="calc-result"></p>
       </div>
     </section>
   </main>
 
-  <!-- Footer Code (Same for all pages)-->
   <footer class="main-footer">
     <div class="container">
       <p>© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
@@ -126,7 +117,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -138,6 +128,5 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
-</body>
+  </body>
 </html>
