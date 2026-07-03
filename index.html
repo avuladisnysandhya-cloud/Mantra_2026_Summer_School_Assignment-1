@@ -3,46 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MANTRA Luxury Resort | Premium Hotel Stay & Booking</title>
+  <title>Photo Gallery | MANTRA Luxury Resort & Spa</title>
   <link rel="icon" type="image/png" href="images/SPool.jpg">
-  <meta name="description" content="Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort. Book executive suites configurations today.">
-  <!-- 1. Canonical Tag -->
-  <link rel="canonical" href="https://mantra-mirage.netlify.app/" />
+  
+  <!-- 1. Canonical Tag (Corrected Domain) -->
+  <link rel="canonical" href="https://mantra-mist.netlify.app/gallery.html" />
 
-  <!-- 2. Schema.org Structured Data & Identity Schema -->
+  <!-- 2. Schema.org Structured Data & Identity Schema (Corrected Domain) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Hotel",
     "name": "MANTRA Luxury Resort & Spa",
     "description": "Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort.",
-    "url": "https://mantra-mirage.netlify.app",
+    "url": "https://mantra-mist.netlify.app",
     "telephone": "+91 98765 43210",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Beach Road",
+      "streetAddress": "Near Beach Road",
       "addressLocality": "Visakhapatnam",
-      "addressRegion": "AP",
-      "country": "IN"
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "530001",
+      "addressCountry": "IN"
     }
   }
   </script>
 
-  <!-- 3. Facebook Open Graph Tags -->
+  <!-- 3. Facebook Open Graph Tags (Corrected Domain) -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mantra-mirage.netlify.app/" />
+  <meta property="og:url" content="https://mantra-mist.netlify.app/gallery.html" />
   <meta property="og:title" content="MANTRA Luxury Resort | Premium Hotel Stay & Booking" />
   <meta property="og:description" content="Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort." />
-  <meta property="og:image" content="https://mantra-mirage.netlify.app/images/hero-bg.jpg" />
+  <meta property="og:image" content="https://mantra-mist.netlify.app/images/hero-bg.jpg" />
 
-  <!-- 4. X (Twitter) Cards -->
+  <!-- 4. X (Twitter) Cards (Corrected Domain) -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://mantra-mirage.netlify.app/" />
+  <meta property="twitter:url" content="https://mantra-mist.netlify.app/gallery.html" />
   <meta property="twitter:title" content="MANTRA Luxury Resort | Premium Hotel Stay & Booking" />
   <meta property="twitter:description" content="Experience unmatched elite tranquility comfort levels at MANTRA Luxury Resort." />
-  <meta property="twitter:image" content="https://mantra-mirage.netlify.app/images/hero-bg.jpg" />
-  <meta name="keywords" content="Luxury Resort Hotel, Premium Rooms Booking, MANTRA Hotel Stay">
+  <meta property="twitter:image" content="https://mantra-mist.netlify.app/images/hero-bg.jpg" />
+  
+  <meta name="description" content="Explore beautiful visual sights, elite rooms, and beach views through our responsive hotel gallery.">
+  <meta name="keywords" content="hotel gallery, resort photos, luxury suites visual exhibits">
   <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .gallery-item img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.03);
+    }
+
+    .btn.active-filter {
+      background-color: #c5a880 !important;
+      color: #0b1528 !important;
+      border: 1px solid #c5a880 !important;
+    }
+
+    /* Popup Overlay */
+    .popup-overlay {
+      display: none; 
+      position: fixed; 
+      top: 0; left: 0; 
+      width: 100%; height: 100%; 
+      background: rgba(11, 21, 40, 0.95); 
+      z-index: 9999; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 20px;
+    }
+
+    .popup-content {
+      max-width: 90%; 
+      max-height: 85vh; 
+      object-fit: contain; 
+      border: 3px solid #c5a880; 
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .close-btn {
+      position: absolute; 
+      top: 20px; right: 30px; 
+      font-size: 40px; 
+      color: #c5a880; 
+      cursor: pointer; 
+      background: none; 
+      border: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -51,72 +102,127 @@
       <a class="logo" href="index.html">MANTRA <span>RESORT</span></a>
       <button class="menu-btn" id="menuBtn">☰</button>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About Hotel</a>
         <a href="facilities.html">Resort Facilities</a>
         <a href="rooms.html">Rooms & Pricing</a>
-        <a href="gallery.html">Photo Exhibits</a>
+        <a href="gallery.html" class="active">Photo Exhibits</a>
         <a href="booking.html">Stay Booking</a>
         <a href="contact.html">Contact Hub</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section style="background: linear-gradient(rgba(11, 21, 40, 0.65), rgba(11, 21, 40, 0.75)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600') no-repeat center center/cover; min-height: calc(100vh - 70px); display: flex; align-items: center; justify-content: center; padding: 40px 0; margin: 0; text-align: center; color: white;">
-      <div class="container" style="max-width: 850px; margin: 0 auto; padding: 0 20px;">
-        <h1 style="font-family: 'Marcellus', serif; font-size: 46px; color: #c5a880; margin-bottom: 25px; letter-spacing: 3px; line-height: 1.3;">Experience Pure Luxury</h1>
-        <p style="font-size: 18px; color: #f1f5f9; margin-bottom: 40px; line-height: 1.9; letter-spacing: 0.5px;">Welcome to MANTRA Luxury Resort & Spa, where elite comfort matches absolute tranquility. Experience customized executive stays tailored specifically for world travelers seeking a peaceful sanctuary.</p>
-        <a href="rooms.html" style="background-color: #c5a880; color: #0b1528; padding: 14px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 14px; letter-spacing: 1px; transition: all 0.3s ease; display: inline-block; box-shadow: 0 4px 15px rgba(197, 168, 128, 0.3);">Explore Our Rooms</a>
+  <main style="background-color: #0b1528; padding: 40px 0;">
+    <section style="text-align: center; padding-bottom: 40px;">
+      <div class="container">
+        <h1 style="font-family: 'Marcellus', serif; font-size: 38px; color: #c5a880; margin-bottom: 10px;">Visual Exhibits</h1>
+        <p style="color: #94a3b8; font-size: 16px;">A Glimpse Into Absolute Grandeur</p>
       </div>
     </section>
 
-    <section class="container" style="padding: 80px 0; text-align: center;">
-      <h2 style="font-family: 'Marcellus', serif; font-size: 34px; margin-bottom: 50px; color: #0b1528; letter-spacing: 1px;">The MANTRA Stay Experience</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; padding: 0 20px;">
+    <section class="container">
+      
+      <div style="text-align: center; margin-bottom: 35px;">
+        <button class="btn active-filter" style="background-color: #c5a880; color: #0b1528; border: 1px solid #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer;" onclick="filterGallery('all', this)">Show All</button>
+        <button class="btn" style="background: none; border: 1px solid #c5a880; color: #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; border-radius: 4px; cursor: pointer; font-weight: bold;" onclick="filterGallery('villas', this)">Villas & Rooms</button>
+        <button class="btn" style="background: none; border: 1px solid #c5a880; color: #c5a880; padding: 10px 20px; margin: 5px; font-size: 14px; border-radius: 4px; cursor: pointer; font-weight: bold;" onclick="filterGallery('amenities', this)">Amenities & Pools</button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 20px 0;">
         
-        <article style="background: white; padding: 35px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-top: 3px solid #c5a880; text-align: left;">
-          <h3 style="margin-bottom: 15px; color: #0b1528; font-family: 'Marcellus', serif; font-size: 20px;">Bespoke Fine Dining</h3>
-          <p style="font-size: 15px; color: #4a5568; line-height: 1.8;">Curated global menus executed elegantly by stellar culinary master professionals to deliver an unforgettable gastronomic journey.</p>
-        </article>
+        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/Bedroom.jpg" alt="MANTRA Luxury Resort Presidential Bed Setup" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
 
-        <article style="background: white; padding: 35px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-top: 3px solid #c5a880; text-align: left;">
-          <h3 style="margin-bottom: 15px; color: #0b1528; font-family: 'Marcellus', serif; font-size: 20px;">Wellness Spa Clusters</h3>
-          <p style="font-size: 15px; color: #4a5568; line-height: 1.8;">Holistic therapy sequences custom designed to rejuvenate your body, balance your inner wellness, and soothe your spirit.</p>
-        </article>
+        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/SPool.jpg" alt="MANTRA Luxury Resort Infinity Blue Waterway" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
 
-        <article style="background: white; padding: 35px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-top: 3px solid #c5a880; text-align: left;">
-          <h3 style="margin-bottom: 15px; color: #0b1528; font-family: 'Marcellus', serif; font-size: 20px;">Infinite Infinity Pool</h3>
-          <p style="font-size: 15px; color: #4a5568; line-height: 1.8;">Relax inside seamless waterfront architectures overlooking deep azure panoramic scenery views and breathtaking tropical horizons.</p>
-        </article>
+        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/Living_.jpg" alt="MANTRA Luxury Resort Royal Lounge Living Space" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/Bath.jpg" alt="MANTRA Luxury Resort Therapy Sanctuary Room" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item villas" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/hero-bg.jpg" alt="MANTRA Luxury Suite View" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item amenities" style="border-radius: 4px; overflow: hidden; height: 200px; border: 1px solid rgba(197, 168, 128, 0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+          <img src="images/colourpool.jpg" alt="MANTRA Luxury Resort Ground View" onclick="openPopup(this.src)" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
 
       </div>
     </section>
   </main>
-  <footer style="background-color: #0b1528; color: #94a3b8; padding: 35px 0; text-align: center; border-top: 1px solid rgba(197, 168, 128, 0.2);">
+
+  <div class="popup-overlay" id="galleryPopup">
+    <button class="close-btn" onclick="closePopup()">&times;</button>
+    <img src="" id="popupImg" class="popup-content" alt="Enlarged View">
+  </div>
+
+  <footer style="background-color: #0b1528; color: #94a3b8; padding: 40px 0; text-align: center; border-top: 1px solid rgba(197, 168, 128, 0.2);">
     <p style="font-size: 14px;">© 2026 MANTRA Luxury Resort & Spa. High-Fidelity Custom Independent Assignment Web Template.</p>
     
     <p style="color: #94a3b8; font-size: 14px; max-width: 800px; margin: 20px auto; text-align: center; line-height: 1.6;">
       Welcome to MANTRA Luxury Resort & Spa, the ultimate sanctuary of elite tranquility and premium comfort. Our executive suites, beachfront villas, and royal lounges are designed to offer an unmatched luxury experience. Enjoy world-class amenities, stunning infinity pools, and holistic wellness therapy rooms tailored just for you. Book your stay today and discover absolute grandeur.
     </p>
-    
-    <p style="font-size: 13px; color: #94a3b8; margin-top: 15px;">
+    <p style="font-size: 13px; color: #94a3b8; margin-top: 15px; line-height: 1.8;">
       Address: Near Beach Road, Visakhapatnam, Andhra Pradesh, 530001, India | Phone: +91 98765 43210
     </p>
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    function openPopup(imageSrc) {
+      document.getElementById('popupImg').src = imageSrc;
+      document.getElementById('galleryPopup').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; 
+    }
+
+    function closePopup() {
+      document.getElementById('galleryPopup').style.display = 'none';
+      document.body.style.overflow = 'auto'; 
+    }
+    
+    function filterGallery(category, clickedButton) {
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      const buttons = document.querySelectorAll('.btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active-filter');
+        btn.style.backgroundColor = 'transparent';
+        btn.style.color = '#c5a880';
+      });
+
+      clickedButton.classList.add('active-filter');
+      clickedButton.style.backgroundColor = '#c5a880';
+      clickedButton.style.color = '#0b1528';
+    }
+  </script>
+
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/6a45ff498c45b31d46f20f6c/1jsgmqic3';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6a45ff498c45b31d46f20f6c/1jsgmqic3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
   <!--End of Tawk.to Script-->
 </body>
